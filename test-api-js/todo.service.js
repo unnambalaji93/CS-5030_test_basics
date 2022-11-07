@@ -23,15 +23,23 @@ class todoservice{
     }
 
     add_todo(todo){
-        // Your code here
+        let anothertodo = prompt("Type a todo to add")
+        todos.push(anothertodo);
+        readtodo();
     }
 
     delete_todo(id){
-        // Your code here
-    }
+        var todoid = prompt('Which todoid you want to change?');
+        todos.splice(todoid); 
+        alert(todos);
+}
 
     update_todo(id, todo){
-        // Your code here
+    var todoid = prompt('Which todoid you want to change?');
+    var updatedtodo = prompt('Enter updated todo');
+    todo[todoid] = updatedtodo;
+    alert(todos);
+
     }
 }
 
